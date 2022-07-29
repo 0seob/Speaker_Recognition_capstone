@@ -22,7 +22,7 @@ torchaudio.set_audio_backend("soundfile")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 GOOGLE_APPLICATION_CREDENTIALS = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
-    "composed-strata-349113-1fb4ba609b8d.json"
+    "***"
 )
 SAMPLE_RATE = 16000
 SAMPLE_SIZE = 4  # int(2) -> float(4) RAW 처리용
@@ -46,7 +46,7 @@ MAX_FAIL_COUNT = 3
 similarity = torch.nn.CosineSimilarity(dim=-1, eps=1e-6)
 classifier = EncoderClassifier.from_hparams(
     source=os.path.join(
-        BASE_DIR, "pretrained_models\\SpeakerRecognition-8f6f7fdaa9628acf73e21ad1f99d5f83"))
+        BASE_DIR, "***"))
 lock = threading.Lock()
 connections = {}
 profiles = []
